@@ -75,7 +75,7 @@ class UserCf:
 
 if __name__ == '__main__':
     data = pd.read_csv('ratings copy.csv', header=None, names=['id', 'name', 'score', 'time'])
-    num = eval(input("前输入要推荐的人数数量: "))
+    num = eval(input("请输入要推荐的人数数量: "))
     dict1 = {}
     for name, data in data.groupby('id'):
         name = str(name)
